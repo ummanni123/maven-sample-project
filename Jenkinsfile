@@ -75,14 +75,14 @@ pipeline {
         bat "copy target\\Example-0.0.1-SNAPSHOT.war	 \"${tomcatWeb}\\Example-0.0.1-SNAPSHOT.war\""
        }
    }
-      stage ('Start Tomcat Server') {
+      /*stage ('Start Tomcat Server') {
         steps {
           //sleep(time:5,unit:"SECONDS") 
           bat "\"${tomcatBin}\\shutdown.bat\""
           bat "\"${tomcatBin}\\startup.bat\""
           //sleep(time:100,unit:"SECONDS")
         }
-   }
+   }*/
       
   }
 }
