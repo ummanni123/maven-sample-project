@@ -75,7 +75,7 @@ pipeline {
     
     stage('Docker Run'){
       steps{
-        bat "docker run -p 8085:8085 my-tomcat"
+        bat "docker run -p 8080:8080 my-tomcat"
       }
     }
     
