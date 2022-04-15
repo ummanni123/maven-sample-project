@@ -67,13 +67,13 @@ pipeline {
     
     stage('Docker Build'){
       steps{
-        'docker build . -t my-tomcat'
+        "docker build . -t my-tomcat"
       }
     }
     
     stage('Docker Run'){
       steps{
-        'docker run -p 8085:8085 my-tomcat'
+        "docker run -p 8085:8085 my-tomcat"
       }
     }
     
