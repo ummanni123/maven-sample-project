@@ -6,8 +6,8 @@ pipeline {
   environment {
     CI = true
     /*ARTIFACTORY_ACCESS_TOKEN = credentials('artifactory-access-token')*/
-    tomcatWeb = 'C:\\Program Files\\Apache Software Foundation\\apache-tomcat-9.0.43\\webapps'
-    tomcatBin = 'C:\\Program Files\\Apache Software Foundation\\apache-tomcat-9.0.43\\bin'
+    tomcatWeb = 'C:\\\\Program Files\\Apache Software Foundation\\apache-tomcat-9.0.43\\webapps'
+    tomcatBin = 'C:\\\\Program Files\\Apache Software Foundation\\apache-tomcat-9.0.43\\bin'
     tomcatStatus = ''
     mvnHome =  tool name: 'Maven3.6.3', type: 'maven' 
   }
