@@ -51,8 +51,8 @@ pipeline {
         spec:'''{
         "files": [
           {
-          "pattern": "Example-0.0.1-20220404.065308-3.war",
-          "target": "ankush-test-repo/com/github/Premvikash/Example/0.0.1-SNAPSHOT/"
+          "pattern": "target/Example-0.0.1-SNAPSHOT.war",
+          "target": "ankush-test-repo/"
           }
         ]
         }''',
