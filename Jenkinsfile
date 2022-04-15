@@ -65,16 +65,26 @@ pipeline {
      }
     
     
+    stage('Docker Build'){
+      steps{
+        'docker build . -t my-tomcat'
+      }
+    }
     
+    stage('Docker Run'){
+      steps{
+        'docker run -p 8085:8085 my-tomcat'
+      }
+    }
     
     
     
    
-     stage('Deploy to Tomcat'){
+    /* stage('Deploy to Tomcat'){
        steps {
         bat "copy target\\Example-0.0.1-SNAPSHOT.war	 \"${tomcatWeb}\\Example-0.0.1-SNAPSHOT.war\""
        }
-   }
+   }*/
       /*stage ('Start Tomcat Server') {
         steps {
           //sleep(time:5,unit:"SECONDS") 
