@@ -10,6 +10,8 @@ pipeline {
     tomcatBin = 'C:\\\\Program Files\\Apache Software Foundation\\Tomcat 7.0\\bin'
     tomcatStatus = ''
     mvnHome =  tool name: 'Maven3.6.3', type: 'maven' 
+    imagename = "my-tomcat"
+    dockerImage = ''
   }
   
   
