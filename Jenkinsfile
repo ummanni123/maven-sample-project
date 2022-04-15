@@ -69,10 +69,7 @@ pipeline {
     
     stage('Docker Build'){
       steps{
-        //bat "docker build . -t my-tomcat"
-         script {
-          dockerImage = docker.build my-tomcat
-        }
+        bat "docker build . -t my-tomcat"
       }
     }
     
