@@ -72,7 +72,7 @@ pipeline {
    
      stage('Deploy to Tomcat'){
        steps {
-        bat "copy target\\Example-0.0.1-SNAPSHOT.war	 \"${tomcatWeb}\\Example-0.0.1-SNAPSHOT.war	\""
+        bat "copy target\\Example-0.0.1-SNAPSHOT.war	 \"${tomcatWeb}\\Example-0.0.1-SNAPSHOT.war\""
        }
    }
       stage ('Start Tomcat Server') {
